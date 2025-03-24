@@ -7,34 +7,11 @@ import spotify from '../../Util/spotify';
 
 function App () {
   const [searchResults, setSearchResults] = useState([
-    {
-    name: 'name1',
-    artist: 'artist1',
-    album: 'album1',
-    id: 1,
-  },
-  {
-    name: 'name2',
-    artist: 'artist2',
-    album: 'album2',
-    id: 2,
-  },
-  
+   
 ]);  
   const [playlistName, setPlaylistName] = useState('Example My Playlist');
   const [playlistTracks, setPlaylistTracks] = useState([
-    {
-      name: 'playlistName1',
-      artist: 'playlistArtist1',  
-      album: 'playlistAlbum1',
-      id: 3,
-    },
-    {
-      name: 'playlistName2',
-      artist: 'playlistArtist2',  
-      album: 'playlistAlbum2',
-      id: 4,
-    }
+    
   ]);
   function addTrack(track) {
     if (playlistTracks.some(savedTrack => savedTrack.id === track.id)) {
